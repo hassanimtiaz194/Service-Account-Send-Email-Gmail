@@ -10,7 +10,7 @@ SERVICE_ACCOUNT_FILE = 'service.json'
 credentials = service_account.Credentials.from_service_account_file(
     filename=SERVICE_ACCOUNT_FILE,
     scopes=['https://mail.google.com/'],  # https://www.googleapis.com/auth/gmail.send || https://mail.google.com/
-    subject='notice@quickfill.app'  # Replace with the user you want to impersonate
+    subject=''  # Replace with the user you want to impersonate
 )
 
 # Build the Gmail service
@@ -26,8 +26,8 @@ def create_message(sender, to, subject, body):
     return {'raw': raw_message}
 
 # Email details
-sender_email = "notice@quickfill.app"  # Replace with your email address
-recipient_email = "h.imtiaz194@gmail.com"  # Replace with the recipient's email address
+sender_email = ""  # Replace with your email address
+recipient_email = ""  # Replace with the recipient's email address
 email_subject = "Test Email from Gmail API"
 email_body = "Hello, this is a test email sent using the Gmail API!"
 

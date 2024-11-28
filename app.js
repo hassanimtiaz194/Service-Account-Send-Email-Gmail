@@ -9,7 +9,7 @@ const auth = new google.auth.GoogleAuth({
 });
 
 auth.getClient().then(authClient => {
-  authClient.subject = 'notice@quickfill.app';
+  authClient.subject = '';
 
   const gmail = google.gmail({ version: 'v1', auth: authClient });
 
@@ -31,8 +31,8 @@ auth.getClient().then(authClient => {
     return { raw: encodedMessage };
   }
 
-  const senderEmail = 'notice@quickfill.app';
-  const recipientEmail = 'h.imtiaz194@gmail.com';
+  const senderEmail = '';
+  const recipientEmail = '';
   const emailSubject = 'Test Email from Gmail API node';
   const emailBody = 'Hello, this is a test email sent using the Gmail API!';
 

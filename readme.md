@@ -25,8 +25,8 @@
 
 # How to Run the Script (python)
 
-1. **Add json file**
-   Add json file in the root folder as **service.json** 
+1. **Add json file and Email**
+   Add json file in the root folder as **service.json**  and and add subject, sender emaild and recipient email in index.py file.
 
 2. **Ensure Python is Installed**  
    Verify that Python is installed on your system by running the following command in the terminal:  
@@ -44,7 +44,7 @@
 # How to Run the Script (Node)
 
 1. **Add json file**
-   Add json file in the root folder as **service.json** 
+   Add json file in the root folder as **service.json** and add subject, sender emaild and recipient email in app.js file
 
 2. **Ensure Python is Installed**  
    Verify that Node is installed on your system by running the following command in the terminal:  
